@@ -84,6 +84,7 @@ enum iio_modifier {
 	IIO_MOD_CO2,
 	IIO_MOD_VOC,
 	IIO_MOD_LIGHT_UV,
+	IIO_EV_TYPE_FIFO_FLUSH,
 };
 
 enum iio_event_type {
@@ -100,6 +101,8 @@ enum iio_event_direction {
 	IIO_EV_DIR_RISING,
 	IIO_EV_DIR_FALLING,
 	IIO_EV_DIR_NONE,
+        IIO_EV_DIR_FIFO_EMPTY,
+        IIO_EV_DIR_FIFO_DATA,
 };
 
 #endif /* _UAPI_IIO_TYPES_H_ */
